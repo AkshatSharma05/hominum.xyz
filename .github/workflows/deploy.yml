@@ -13,3 +13,5 @@ jobs:
           # Target branch
           PAGES_BRANCH: gh-pages
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Ensure CNAME is preserved
+        run: echo "hominum.xyz" > public/CNAME
