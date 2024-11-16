@@ -2,9 +2,11 @@
 
 {% block content %}
 <h1 class="title">
+  <font color = "white">
   {{ section.title }}
+</font>
 </h1>
-<ul>
+<ul style="list-style-type: none;">
   {% for page in section.pages %}
   <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
   {% endfor %}
